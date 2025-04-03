@@ -1,10 +1,11 @@
-import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './navigation/AppNavigator';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
-export default function App() {
-  return (
-    <NavigationContainer>
-      <AppNavigator />
-    </NavigationContainer>
-  );
-}
+import { Search, Zap } from 'lucide-react';
+
+import CourseCard from './components/CourseCard';
+import UserInfo from './components/UserInfo';
+import BitcoinRoutes from './routes/BitcoinRoutes'
